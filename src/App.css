@@ -5,6 +5,7 @@
   width: 48vw;
   margin: 12vh auto 0 auto;
 }
+
 .calcBtns {
   display: flex;
 }
@@ -19,7 +20,7 @@
   grid-template-columns: auto;
 }
 
-.rigthBtns button {
+.rigth {
   background-color: orange;
 }
 
