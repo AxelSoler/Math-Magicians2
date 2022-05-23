@@ -4,7 +4,7 @@ export default class Calculator extends React.PureComponent {
   render() {
     return (
       <div className="calculator">
-        <div>0</div>
+        <div className="answerDiv"><p className="answer">0</p></div>
         <div className="calcBtns">
           <div className="leftBtns">
             <button type="button">AC</button>
@@ -19,7 +19,7 @@ export default class Calculator extends React.PureComponent {
             <button type="button">1</button>
             <button type="button">2</button>
             <button type="button">3</button>
-            <button type="button">0</button>
+            <button className="item0" type="button">0</button>
             <button type="button">.</button>
           </div>
           <div className="rigthBtns">
