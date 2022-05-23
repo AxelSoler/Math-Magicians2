@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
 
-function App() {
+export default class App extends React.PureComponent {
+  render() {
+    return (
+    );
+  }
 }
-
-export default App;
