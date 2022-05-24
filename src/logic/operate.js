@@ -1,30 +1,30 @@
 import Big from 'big.js';
 
-export default function operate(number1, number2, calc) {
-  const obj1 = Big(number1);
-  const obj2 = Big(number2);
-
-  if (calc === '%') {
+export default function operate(numberOne, numberTwo, operation) {
+  const one = Big(numberOne);
+  const two = Big(numberTwo);
+  if (operation === '+') {
+    return one.plus(two).toString();
+  }
+  if (operation === '-') {
+    return one.minus(two).toString();
+  }
+  if (operation === 'x') {
+    return one.times(two).toString();
+  }
+  if (operation === '÷') {
     try {
-      return obj1.mod(obj2).toString();
+      return one.div(two).toString();
     } catch (err) {
-      return "Error";
+      return "Can't divide by 0.";
     }
   }
-  if (calc === '&divide;') {
-    try {
-      return obj1.div(obj2).toString();
+  if (operation === '%') {
+     try {
+      return one.mod(two).toString();
     } catch (err) {
-      return "Error dividing by 0.";
+      return "Can't find modulo as can't divide by 0.";
     }
   }
-  if (calc === 'x') {
-    return obj1.times(obj2);
-  }
-  if (calc === '-') {
-    return obj1.minus(obj2);
-  }
-  if (calc === '+') {
-    return obj1.plus(obj2);
-  } 
+  throw Error(`Unknown operation '${operation}'`);
 }
