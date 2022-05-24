@@ -23,7 +23,7 @@ export default class Calculator extends React.PureComponent {
             <button type="button">.</button>
           </div>
           <div className="rigthBtns">
-            <button className="rigth" type="button">:</button>
+            <button className="rigth" type="button">&divide;</button>
             <button className="rigth" type="button">x</button>
             <button className="rigth" type="button">-</button>
             <button className="rigth" type="button">+</button>
