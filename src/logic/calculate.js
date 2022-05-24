@@ -1,1 +1,1 @@
-import Calculator from './components/Calculator';
+import operate from './operate';
