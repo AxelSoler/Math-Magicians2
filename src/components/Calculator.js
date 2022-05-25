@@ -23,9 +23,9 @@ export default class Calculator extends React.PureComponent {
         </div>
         <div className="calcBtns">
           <div className="leftBtns">
-            <button onClick={this.handleFunction} id="" type="button">AC</button>
-            <button onClick={this.handleFunction} id="" type="button">+/-</button>
-            <button onClick={this.handleFunction} id="" type="button">%</button>
+            <button onClick={this.handleFunction} id="AC" type="button">AC</button>
+            <button onClick={this.handleFunction} id="+/-" type="button">+/-</button>
+            <button onClick={this.handleFunction} id="%" type="button">%</button>
             <button onClick={this.handleFunction} id="7" type="button">7</button>
             <button onClick={this.handleFunction} id="8" type="button">8</button>
             <button onClick={this.handleFunction} id="9" type="button">9</button>
