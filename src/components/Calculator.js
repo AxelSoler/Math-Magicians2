@@ -4,23 +4,26 @@ import calculate from '../logic/calculate';
 export default class Calculator extends React.PureComponent {
   constructor(props) {
     super(props);
-    this.state = { total: 0, next: null, operation: null };
+    this.state = { objValue: 0 };
     this.handleFunction = this.handleFunction.bind(this);
   }
 
   handleFunction(e) {
-    this.setState((state) => calculate(state, e.target.id));
+    const { objValue } = this.state;
+    const newObj = calculate(objValue, e.target.innerText);
+    this.setState({ objValue: newObj });
+    const answer = document.querySelector('.answer');
+    if (newObj.next !== null) {
+      answer.textContent = newObj.next;
+    } else {
+      answer.textContent = newObj.total;
+    }
   }
 
   render() {
-    const { total, next, operation } = this.state;
     return (
       <div className="calculator">
-        <div className="answerDiv">
-          <p className="answer">{total}</p>
-          <p className="answer">{next}</p>
-          <p className="answer">{operation}</p>
-        </div>
+        <div className="answerDiv"><p className="answer">0</p></div>
         <div className="calcBtns">
           <div className="leftBtns">
             <button onClick={this.handleFunction} id="AC" type="button">AC</button>
