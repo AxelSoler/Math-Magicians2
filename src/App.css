@@ -24,6 +24,10 @@
   background-color: orange;
 }
 
+.rigth:hover {
+  background-color: rgb(230, 151, 5);
+}
+
 button {
   width: 12vw;
   height: 6vw;
