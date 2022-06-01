@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   width: 48vw;
-  margin: 12vh auto 0 auto;
+  margin: 0 auto;
+  border: 8px solid black;;
 }
 
 .calcBtns {
@@ -102,4 +103,14 @@ h1 {
 .loremText {
   margin: 2% 4%;
   font-size: 3vh;
+}
+
+.calculatorContainer {
+  width: 100%;
+  display: flex;
+  margin: 6vw 0 0 0;
+}
+
+.math {
+  margin-left: 8vw;
 }
