@@ -52,3 +52,40 @@ button {
   grid-column: 1 / span 2;
   width: 24vw;
 }
+
+.navMenu {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 2% 0;
+}
+
+.ulMenu {
+  list-style: none;
+  display: flex;
+  width: 50%;
+  /* justify-content: space-evenly; */
+  margin-right: 2%;
+}
+
+.link {
+  border-right: 4px solid black;
+  padding: 0 5%;
+}
+
+.link:nth-child(3) {
+  border-right: none;
+}
+
+h1 {
+  padding-left: 8%;
+}
+
+.quote {
+  width: 100%;
+}
+
+.quoteText {
+  margin-top: 10%;
+  padding: 6%;
+}

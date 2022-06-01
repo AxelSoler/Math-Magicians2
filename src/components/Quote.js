@@ -2,7 +2,7 @@ import React from 'react';
 
 const Quote = () => (
   <div className="quote">
-    <h2>
+    <h2 className="quoteText">
       Math Magicians is not about numbers, equations, computations, or algorithms.
       It is abput understanding. - William Paul Thurston
     </h2>

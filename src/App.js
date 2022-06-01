@@ -7,12 +7,12 @@ import Quote from './components/Quote';
 
 const App = () => (
   <div className="App">
-    <h1>Math Magicians</h1>
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="Calculator">Calculator</Link></li>
-        <li><Link to="Quote">Quote</Link></li>
+    <nav className="navMenu">
+      <h1>Math Magicians</h1>
+      <ul className="ulMenu">
+        <li className="link"><Link to="/">Home</Link></li>
+        <li className="link"><Link to="Calculator">Calculator</Link></li>
+        <li className="link"><Link to="Quote">Quote</Link></li>
       </ul>
     </nav>
     <Routes>
