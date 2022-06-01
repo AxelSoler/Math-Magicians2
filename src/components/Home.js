@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Home = () => {
+const Home = () => (
   <div className="homePage">
     <h2>Welcome to our page!</h2>
     <p>
@@ -25,7 +25,7 @@ const Home = () => {
       Fusce neque sapien, tristique ac eros quis, tristique finibus lectus.
       Fusce mattis felis ut libero laoreet interdum.
     </p>
-  </div>;
-};
+  </div>
+);
 
 export default Home;
