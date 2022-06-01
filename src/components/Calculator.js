@@ -17,7 +17,7 @@ const Calculator = () => {
 
   return (
     <div className="calculatorContainer">
-      <h2 className="math">Let&lsquo;s do some math!</h2>
+      <div className="math"><h2 className="calculatorTitle">Let&apos;s do some math!</h2></div>
       <div className="calculator">
         <div className="answerDiv"><p className="answer">0</p></div>
         <div className="calcBtns">
