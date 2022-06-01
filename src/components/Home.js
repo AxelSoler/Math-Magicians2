@@ -2,8 +2,8 @@ import React from 'react';
 
 const Home = () => (
   <div className="homePage">
-    <h2>Welcome to our page!</h2>
-    <p>
+    <h2 className="homepageTitle">Welcome to our page!</h2>
+    <p className="loremText">
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       Maecenas semper sem nibh, quis posuere purus egestas quis.
       Nullam mattis sit amet metus a rhoncus.
@@ -14,7 +14,7 @@ const Home = () => (
       Phasellus ultricies eros tincidunt dignissim lacinia.
       Etiam posuere commodo elit eget euismod.
     </p>
-    <p>
+    <p className="loremText">
       Mauris molestie gravida iaculis.
       Vestibulum semper velit sit amet bibendum porta.
       Proin efficitur justo quam, vitae sodales sem placerat ut.
